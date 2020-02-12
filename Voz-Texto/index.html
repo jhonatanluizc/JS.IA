@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reconhecimento de voz</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+<div id="texto"></div>
+
+<script src="pergunta.js"></script>
+<script src="resposta.js"></script>
+
+<div class="but">
+<button onmousedown="bleep.play()" class="buttonp" type="button" onclick="pergunt()">Pergunta</button>
+<button onmousedown="bleep.play()"  class="buttonr" type="button" onclick="respost()">Resposta</button>
+</div>
+	<script> 
+		var bleep = new Audio();
+		bleep.src = "sfx/m.mp3";
+	</script>
+</body>
+</html>
