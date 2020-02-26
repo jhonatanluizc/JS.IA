@@ -1,3 +1,11 @@
+know = {
+                "oi" : "ola",
+				"Oi" : "ola",
+                "como vai" : "muito bem :)",
+                "ok" : ":D"
+            };
+
+
 function falar() {
     let rec;
         if (!("webkitSpeechRecognition" in window)) {
@@ -13,18 +21,14 @@ function falar() {
         for (let i = event.resultIndex; i < event.results.length; i++){
                 document.getElementById('texto').innerHTML = event.results[i][0].transcript;
 				
-				change();
+				addT();
         }
     }
     
     rec.start();
     }
 
-know = {
-                "oi" : "ola",
-                "como vai?" : "muito bem :)",
-                "ok" : ":D"
-            };
+
 
 
     
