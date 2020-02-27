@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CHATBOT</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+		
+		<script> 
+		var bleep = new Audio();
+		bleep.src = "sfx/conf.mp3";
+	    </script>
+		
+        <div class="chatbox">
+            <div class="chatlogs" id="chatlogi">
+
+                
+
+
+            </div>
+
+            <div class="chat-form">
+                <textarea id="texto"></textarea>
+				
+                <button class="button" onmousedown="bleep.play()" style="border: 0; background: transparent" onclick="falar()">
+                    <img src="img/mic.png" width="30" height="25" alt="submit" />
+                </button>
+				
+				<button class="button" onmousedown="bleep.play()" style="border: 0; background: transparent" onclick="addT()">
+					<img src="img/send.png" width="30" height="25" alt="submit" />
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
